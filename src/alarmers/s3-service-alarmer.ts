@@ -1,6 +1,6 @@
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnBucket } from '@aws-cdk/aws-s3';
-import { IConstruct } from '@aws-cdk/core';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnBucket } from 'aws-cdk-lib/aws-s3';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class S3ServiceAlarmer extends Alarmer {

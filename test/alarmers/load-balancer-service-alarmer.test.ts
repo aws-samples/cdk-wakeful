@@ -1,10 +1,11 @@
-import { Template } from '@aws-cdk/assertions';
-import { AutoScalingGroup } from '@aws-cdk/aws-autoscaling';
-import { AmazonLinuxImage, InstanceClass, InstanceSize, InstanceType, Vpc } from '@aws-cdk/aws-ec2';
-import { LoadBalancer } from '@aws-cdk/aws-elasticloadbalancing';
-import { ApplicationLoadBalancer } from '@aws-cdk/aws-elasticloadbalancingv2';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Aspects, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import { AutoScalingGroup } from 'aws-cdk-lib/aws-autoscaling';
+import { AmazonLinuxImage, InstanceClass, InstanceSize, InstanceType, Vpc } from 'aws-cdk-lib/aws-ec2';
+import { LoadBalancer } from 'aws-cdk-lib/aws-elasticloadbalancing';
+import { ApplicationLoadBalancer } from 'aws-cdk-lib/aws-elasticloadbalancingv2';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { LoadBalancingServiceAlarmer } from '../../src/alarmers/load-balancing-service-alarmer';
 
 class BestPracticeAspect implements IAspect {

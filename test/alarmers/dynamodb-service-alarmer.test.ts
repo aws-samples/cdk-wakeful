@@ -1,7 +1,8 @@
-import { Template } from '@aws-cdk/assertions';
-import { AttributeType, Table } from '@aws-cdk/aws-dynamodb';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Aspects, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import { AttributeType, Table } from 'aws-cdk-lib/aws-dynamodb';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { DynamodbServiceAlarmer } from '../../src/alarmers/dynamodb-service-alarmer';
 
 class BestPracticeAspect implements IAspect {

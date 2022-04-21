@@ -1,7 +1,8 @@
-import { Template } from '@aws-cdk/assertions';
-import { Vpc } from '@aws-cdk/aws-ec2';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Aspects, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import { Vpc } from 'aws-cdk-lib/aws-ec2';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { SnsServiceAlarmer } from '../../src/alarmers/sns-service-alarmer';
 
 class BestPracticeAspect implements IAspect {

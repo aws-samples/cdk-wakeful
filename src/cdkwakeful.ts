@@ -2,10 +2,8 @@
 Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 SPDX-License-Identifier: MIT-0
 */
-import {
-  IAspect,
-  IConstruct,
-} from '@aws-cdk/core';
+import { IAspect } from 'aws-cdk-lib';
+import { IConstruct } from 'constructs';
 import { Alarmer, AlarmerProps } from './alarmer';
 import { ApiGatewayServiceAlarmer } from './alarmers/api-gateway-service-alarmer';
 import { DynamodbServiceAlarmer } from './alarmers/dynamodb-service-alarmer';

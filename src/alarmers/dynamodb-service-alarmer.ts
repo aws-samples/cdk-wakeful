@@ -1,6 +1,6 @@
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnTable } from '@aws-cdk/aws-dynamodb';
-import { IConstruct } from '@aws-cdk/core';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnTable } from 'aws-cdk-lib/aws-dynamodb';
+import { IConstruct } from 'constructs';
 import { Alarmer, AlarmerProps } from '../alarmer';
 
 export class DynamodbServiceAlarmer extends Alarmer {

@@ -1,7 +1,8 @@
-import { Template } from '@aws-cdk/assertions';
-import { Bucket } from '@aws-cdk/aws-s3';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Aspects, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import { Bucket } from 'aws-cdk-lib/aws-s3';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { S3ServiceAlarmer } from '../../src/alarmers/s3-service-alarmer';
 
 class BestPracticeAspect implements IAspect {

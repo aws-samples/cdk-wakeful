@@ -1,6 +1,6 @@
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnTopic } from '@aws-cdk/aws-sns';
-import { IConstruct } from '@aws-cdk/core';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnTopic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class SnsServiceAlarmer extends Alarmer {

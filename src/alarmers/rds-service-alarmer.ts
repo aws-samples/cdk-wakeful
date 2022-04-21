@@ -1,6 +1,6 @@
-import { ComparisonOperator, Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnDBCluster, CfnDBInstance } from '@aws-cdk/aws-rds';
-import { IConstruct } from '@aws-cdk/core';
+import { ComparisonOperator, Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnDBCluster, CfnDBInstance } from 'aws-cdk-lib/aws-rds';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class RdsServiceAlarmer extends Alarmer {

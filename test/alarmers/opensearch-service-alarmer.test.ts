@@ -1,9 +1,9 @@
-import { Template } from '@aws-cdk/assertions';
-import { Domain, EngineVersion } from '@aws-cdk/aws-opensearchservice';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Aspects, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import { Domain, EngineVersion } from 'aws-cdk-lib/aws-opensearchservice';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { OpensearchServiceAlarmer } from '../../src/alarmers/opensearch-service-alarmer';
-
 
 class BestPracticeAspect implements IAspect {
   private alarmer: OpensearchServiceAlarmer = new OpensearchServiceAlarmer({});

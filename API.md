@@ -3,27 +3,27 @@
 
 ## Structs <a name="Structs"></a>
 
-### AlarmerProps <a name="CDKWakeful.AlarmerProps"></a>
+### AlarmerProps <a name="cdk-wakeful.AlarmerProps"></a>
 
 #### Initializer <a name="[object Object].Initializer"></a>
 
 ```typescript
-import { AlarmerProps } from 'CDKWakeful'
+import { AlarmerProps } from 'cdk-wakeful'
 
 const alarmerProps: AlarmerProps = { ... }
 ```
 
-##### `alertables`<sup>Optional</sup> <a name="CDKWakeful.AlarmerProps.property.alertables"></a>
+##### `alertables`<sup>Optional</sup> <a name="cdk-wakeful.AlarmerProps.property.alertables"></a>
 
 ```typescript
 public readonly alertables: IAlertable[];
 ```
 
-- *Type:* [`CDKWakeful.IAlertable`](#CDKWakeful.IAlertable)[]
+- *Type:* [`cdk-wakeful.IAlertable`](#cdk-wakeful.IAlertable)[]
 
 ---
 
-##### `logIgnores`<sup>Optional</sup> <a name="CDKWakeful.AlarmerProps.property.logIgnores"></a>
+##### `logIgnores`<sup>Optional</sup> <a name="cdk-wakeful.AlarmerProps.property.logIgnores"></a>
 
 ```typescript
 public readonly logIgnores: boolean;
@@ -35,641 +35,641 @@ Whether or not to log informational message regard resource not supported or cas
 
 ---
 
-##### `logLevel`<sup>Optional</sup> <a name="CDKWakeful.AlarmerProps.property.logLevel"></a>
+##### `logLevel`<sup>Optional</sup> <a name="cdk-wakeful.AlarmerProps.property.logLevel"></a>
 
 ```typescript
 public readonly logLevel: LogLevel;
 ```
 
-- *Type:* [`CDKWakeful.logger.LogLevel`](#CDKWakeful.logger.LogLevel)
+- *Type:* [`cdk-wakeful.logger.LogLevel`](#cdk-wakeful.logger.LogLevel)
 
 ---
 
 ## Classes <a name="Classes"></a>
 
-### Alarmer <a name="CDKWakeful.Alarmer"></a>
+### Alarmer <a name="cdk-wakeful.Alarmer"></a>
 
 Base class for Modifiers.
 
-#### Initializers <a name="CDKWakeful.Alarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.Alarmer.Initializer"></a>
 
 ```typescript
-import { Alarmer } from 'CDKWakeful'
+import { Alarmer } from 'cdk-wakeful'
 
 new Alarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.Alarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.Alarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.Alarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.Alarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.Alarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.Alarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.Alarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.Alarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.Alarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.Alarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.Alarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.Alarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.Alarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.Alarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### ApiGatewayServiceAlarmer <a name="CDKWakeful.ApiGatewayServiceAlarmer"></a>
+### ApiGatewayServiceAlarmer <a name="cdk-wakeful.ApiGatewayServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.ApiGatewayServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.ApiGatewayServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { ApiGatewayServiceAlarmer } from 'CDKWakeful'
+import { ApiGatewayServiceAlarmer } from 'cdk-wakeful'
 
 new ApiGatewayServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.ApiGatewayServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.ApiGatewayServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.ApiGatewayServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.ApiGatewayServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.ApiGatewayServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.ApiGatewayServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.ApiGatewayServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.ApiGatewayServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.ApiGatewayServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.ApiGatewayServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.ApiGatewayServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.ApiGatewayServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.ApiGatewayServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.ApiGatewayServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### DynamodbServiceAlarmer <a name="CDKWakeful.DynamodbServiceAlarmer"></a>
+### DynamodbServiceAlarmer <a name="cdk-wakeful.DynamodbServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.DynamodbServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.DynamodbServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { DynamodbServiceAlarmer } from 'CDKWakeful'
+import { DynamodbServiceAlarmer } from 'cdk-wakeful'
 
 new DynamodbServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.DynamodbServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.DynamodbServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.DynamodbServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.DynamodbServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.DynamodbServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.DynamodbServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.DynamodbServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.DynamodbServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.DynamodbServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.DynamodbServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.DynamodbServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.DynamodbServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.DynamodbServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.DynamodbServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### Ec2ServiceAlarmer <a name="CDKWakeful.Ec2ServiceAlarmer"></a>
+### Ec2ServiceAlarmer <a name="cdk-wakeful.Ec2ServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.Ec2ServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.Ec2ServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { Ec2ServiceAlarmer } from 'CDKWakeful'
+import { Ec2ServiceAlarmer } from 'cdk-wakeful'
 
 new Ec2ServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.Ec2ServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.Ec2ServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.Ec2ServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.Ec2ServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.Ec2ServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.Ec2ServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.Ec2ServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.Ec2ServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.Ec2ServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.Ec2ServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.Ec2ServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.Ec2ServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.Ec2ServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.Ec2ServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### ElasticacheServiceAlarmer <a name="CDKWakeful.ElasticacheServiceAlarmer"></a>
+### ElasticacheServiceAlarmer <a name="cdk-wakeful.ElasticacheServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.ElasticacheServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.ElasticacheServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { ElasticacheServiceAlarmer } from 'CDKWakeful'
+import { ElasticacheServiceAlarmer } from 'cdk-wakeful'
 
 new ElasticacheServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.ElasticacheServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.ElasticacheServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.ElasticacheServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.ElasticacheServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.ElasticacheServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.ElasticacheServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.ElasticacheServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.ElasticacheServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.ElasticacheServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.ElasticacheServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.ElasticacheServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.ElasticacheServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.ElasticacheServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.ElasticacheServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### LambdaServiceAlarmer <a name="CDKWakeful.LambdaServiceAlarmer"></a>
+### LambdaServiceAlarmer <a name="cdk-wakeful.LambdaServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.LambdaServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.LambdaServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { LambdaServiceAlarmer } from 'CDKWakeful'
+import { LambdaServiceAlarmer } from 'cdk-wakeful'
 
 new LambdaServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.LambdaServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.LambdaServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.LambdaServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.LambdaServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.LambdaServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.LambdaServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.LambdaServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.LambdaServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.LambdaServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.LambdaServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.LambdaServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.LambdaServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.LambdaServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.LambdaServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### OpensearchServiceAlarmer <a name="CDKWakeful.OpensearchServiceAlarmer"></a>
+### OpensearchServiceAlarmer <a name="cdk-wakeful.OpensearchServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.OpensearchServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.OpensearchServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { OpensearchServiceAlarmer } from 'CDKWakeful'
+import { OpensearchServiceAlarmer } from 'cdk-wakeful'
 
 new OpensearchServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.OpensearchServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.OpensearchServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.OpensearchServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.OpensearchServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.OpensearchServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.OpensearchServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.OpensearchServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.OpensearchServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.OpensearchServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.OpensearchServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.OpensearchServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.OpensearchServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.OpensearchServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.OpensearchServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### RdsServiceAlarmer <a name="CDKWakeful.RdsServiceAlarmer"></a>
+### RdsServiceAlarmer <a name="cdk-wakeful.RdsServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.RdsServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.RdsServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { RdsServiceAlarmer } from 'CDKWakeful'
+import { RdsServiceAlarmer } from 'cdk-wakeful'
 
 new RdsServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.RdsServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.RdsServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.RdsServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.RdsServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.RdsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.RdsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.RdsServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.RdsServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.RdsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.RdsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.RdsServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.RdsServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.RdsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.RdsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### S3ServiceAlarmer <a name="CDKWakeful.S3ServiceAlarmer"></a>
+### S3ServiceAlarmer <a name="cdk-wakeful.S3ServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.S3ServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.S3ServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { S3ServiceAlarmer } from 'CDKWakeful'
+import { S3ServiceAlarmer } from 'cdk-wakeful'
 
 new S3ServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.S3ServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.S3ServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.S3ServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.S3ServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.S3ServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.S3ServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.S3ServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.S3ServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.S3ServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.S3ServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.S3ServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.S3ServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.S3ServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.S3ServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### SnsServiceAlarmer <a name="CDKWakeful.SnsServiceAlarmer"></a>
+### SnsServiceAlarmer <a name="cdk-wakeful.SnsServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.SnsServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.SnsServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { SnsServiceAlarmer } from 'CDKWakeful'
+import { SnsServiceAlarmer } from 'cdk-wakeful'
 
 new SnsServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.SnsServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.SnsServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.SnsServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.SnsServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.SnsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.SnsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.SnsServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.SnsServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.SnsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.SnsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.SnsServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.SnsServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.SnsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.SnsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
 
 
 
-### StepFunctionsServiceAlarmer <a name="CDKWakeful.StepFunctionsServiceAlarmer"></a>
+### StepFunctionsServiceAlarmer <a name="cdk-wakeful.StepFunctionsServiceAlarmer"></a>
 
-#### Initializers <a name="CDKWakeful.StepFunctionsServiceAlarmer.Initializer"></a>
+#### Initializers <a name="cdk-wakeful.StepFunctionsServiceAlarmer.Initializer"></a>
 
 ```typescript
-import { StepFunctionsServiceAlarmer } from 'CDKWakeful'
+import { StepFunctionsServiceAlarmer } from 'cdk-wakeful'
 
 new StepFunctionsServiceAlarmer(props: AlarmerProps)
 ```
 
-##### `props`<sup>Required</sup> <a name="CDKWakeful.StepFunctionsServiceAlarmer.parameter.props"></a>
+##### `props`<sup>Required</sup> <a name="cdk-wakeful.StepFunctionsServiceAlarmer.parameter.props"></a>
 
-- *Type:* [`CDKWakeful.AlarmerProps`](#CDKWakeful.AlarmerProps)
+- *Type:* [`cdk-wakeful.AlarmerProps`](#cdk-wakeful.AlarmerProps)
 
 ---
 
 #### Methods <a name="Methods"></a>
 
-##### `bestPractice` <a name="CDKWakeful.StepFunctionsServiceAlarmer.bestPractice"></a>
+##### `bestPractice` <a name="cdk-wakeful.StepFunctionsServiceAlarmer.bestPractice"></a>
 
 ```typescript
 public bestPractice(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.StepFunctionsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.StepFunctionsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `errors` <a name="CDKWakeful.StepFunctionsServiceAlarmer.errors"></a>
+##### `errors` <a name="cdk-wakeful.StepFunctionsServiceAlarmer.errors"></a>
 
 ```typescript
 public errors(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.StepFunctionsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.StepFunctionsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
-##### `throttles` <a name="CDKWakeful.StepFunctionsServiceAlarmer.throttles"></a>
+##### `throttles` <a name="cdk-wakeful.StepFunctionsServiceAlarmer.throttles"></a>
 
 ```typescript
 public throttles(node: IConstruct)
 ```
 
-###### `node`<sup>Required</sup> <a name="CDKWakeful.StepFunctionsServiceAlarmer.parameter.node"></a>
+###### `node`<sup>Required</sup> <a name="cdk-wakeful.StepFunctionsServiceAlarmer.parameter.node"></a>
 
-- *Type:* [`@aws-cdk/core.IConstruct`](#@aws-cdk/core.IConstruct)
+- *Type:* [`constructs.IConstruct`](#constructs.IConstruct)
 
 ---
 
@@ -678,21 +678,21 @@ public throttles(node: IConstruct)
 
 ## Protocols <a name="Protocols"></a>
 
-### IAlertable <a name="CDKWakeful.IAlertable"></a>
+### IAlertable <a name="cdk-wakeful.IAlertable"></a>
 
-- *Implemented By:* [`CDKWakeful.incidentManagerAlerter.IncidentManagerAlerter`](#CDKWakeful.incidentManagerAlerter.IncidentManagerAlerter), [`CDKWakeful.noOpAlerter.NoOpAlerter`](#CDKWakeful.noOpAlerter.NoOpAlerter), [`CDKWakeful.slackAlerter.SlackAlerter`](#CDKWakeful.slackAlerter.SlackAlerter), [`CDKWakeful.snsTopicAlerter.SnsTopicAlerter`](#CDKWakeful.snsTopicAlerter.SnsTopicAlerter), [`CDKWakeful.IAlertable`](#CDKWakeful.IAlertable)
+- *Implemented By:* [`cdk-wakeful.incidentManagerAlerter.IncidentManagerAlerter`](#cdk-wakeful.incidentManagerAlerter.IncidentManagerAlerter), [`cdk-wakeful.noOpAlerter.NoOpAlerter`](#cdk-wakeful.noOpAlerter.NoOpAlerter), [`cdk-wakeful.slackAlerter.SlackAlerter`](#cdk-wakeful.slackAlerter.SlackAlerter), [`cdk-wakeful.snsTopicAlerter.SnsTopicAlerter`](#cdk-wakeful.snsTopicAlerter.SnsTopicAlerter), [`cdk-wakeful.IAlertable`](#cdk-wakeful.IAlertable)
 
 #### Methods <a name="Methods"></a>
 
-##### `subscribeToAlarm` <a name="CDKWakeful.IAlertable.subscribeToAlarm"></a>
+##### `subscribeToAlarm` <a name="cdk-wakeful.IAlertable.subscribeToAlarm"></a>
 
 ```typescript
 public subscribeToAlarm(alarm: Alarm)
 ```
 
-###### `alarm`<sup>Required</sup> <a name="CDKWakeful.IAlertable.parameter.alarm"></a>
+###### `alarm`<sup>Required</sup> <a name="cdk-wakeful.IAlertable.parameter.alarm"></a>
 
-- *Type:* [`@aws-cdk/aws-cloudwatch.Alarm`](#@aws-cdk/aws-cloudwatch.Alarm)
+- *Type:* [`aws-cdk-lib.aws_cloudwatch.Alarm`](#aws-cdk-lib.aws_cloudwatch.Alarm)
 
 ---
 

@@ -1,4 +1,4 @@
-import { Alarm } from '@aws-cdk/aws-cloudwatch';
+import { Alarm } from 'aws-cdk-lib/aws-cloudwatch';
 import { IAlertable } from '../alertable';
 import { Logger, LogLevel } from '../logger';
 

@@ -1,9 +1,8 @@
-import { Template } from '@aws-cdk/assertions';
-import { RestApi } from '@aws-cdk/aws-apigateway';
-import { HttpApi, HttpMethod } from '@aws-cdk/aws-apigatewayv2';
-import { HttpUrlIntegration } from '@aws-cdk/aws-apigatewayv2-integrations';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Aspects, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import { RestApi } from 'aws-cdk-lib/aws-apigateway';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import { IConstruct } from 'constructs';
 import { ApiGatewayServiceAlarmer } from '../../src/alarmers/api-gateway-service-alarmer';
 
 class BestPracticeAspect implements IAspect {
@@ -32,18 +31,6 @@ function includeTestApiGateway(stack: Stack) : void {
   const book = books.addResource('{book_id}');
   book.addMethod('GET');
   book.addMethod('DELETE');
-}
-
-// Based upon https://docs.aws.amazon.com/cdk/api/latest/docs/aws-apigatewayv2-readme.html
-function includeTestV2ApiGateway(stack : Stack) : void {
-  const httpApi = new HttpApi(stack, 'HttpApi');
-  httpApi.addRoutes({
-    path: '/',
-    methods: [HttpMethod.ANY],
-    integration: new HttpUrlIntegration('amazon', 'https://aws.amazon.com/', {
-      method: HttpMethod.ANY,
-    }),
-  });
 }
 
 describe('Amazon API Gateway', () => {
@@ -88,20 +75,6 @@ describe('Amazon API Gateway', () => {
       Threshold: 1,
       TreatMissingData: 'notBreaching',
       MetricName: '5XXError',
-      Statistic: 'Maximum',
-    });
-  });
-
-  test('Errors: with ApiGateway v2', () =>{
-    const withV2Gateway = new Stack();
-    Aspects.of(withV2Gateway).add(new ErrorsAspect());
-    includeTestV2ApiGateway(withV2Gateway);
-    const template = Template.fromStack(withV2Gateway);
-    template.hasResourceProperties('AWS::CloudWatch::Alarm', {
-      EvaluationPeriods: 1,
-      Threshold: 1,
-      TreatMissingData: 'notBreaching',
-      MetricName: '5xx',
       Statistic: 'Maximum',
     });
   });

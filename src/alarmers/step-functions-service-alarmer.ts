@@ -1,6 +1,6 @@
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnStateMachine } from '@aws-cdk/aws-stepfunctions';
-import { IConstruct } from '@aws-cdk/core';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnStateMachine } from 'aws-cdk-lib/aws-stepfunctions';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class StepFunctionsServiceAlarmer extends Alarmer {

@@ -1,8 +1,8 @@
-import { Alarm } from '@aws-cdk/aws-cloudwatch';
-import { SnsAction } from '@aws-cdk/aws-cloudwatch-actions';
-import { Key } from '@aws-cdk/aws-kms';
-import { ITopic, Topic } from '@aws-cdk/aws-sns';
-import { Stack } from '@aws-cdk/core';
+import { Stack } from 'aws-cdk-lib';
+import { Alarm } from 'aws-cdk-lib/aws-cloudwatch';
+import { SnsAction } from 'aws-cdk-lib/aws-cloudwatch-actions';
+import { Key } from 'aws-cdk-lib/aws-kms';
+import { ITopic, Topic } from 'aws-cdk-lib/aws-sns';
 import { IAlertable } from '../alertable';
 
 export interface SnsTopicAlerterProps {

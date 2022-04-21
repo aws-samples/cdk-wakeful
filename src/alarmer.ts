@@ -5,14 +5,13 @@ SPDX-License-Identifier: MIT-0
 
 import {
   Alarm, AlarmProps,
-} from '@aws-cdk/aws-cloudwatch';
-import {
-  IConstruct,
-  Stack,
-} from '@aws-cdk/core';
+} from 'aws-cdk-lib/aws-cloudwatch';
+import { Stack } from 'aws-cdk-lib/core';
+import { IConstruct } from 'constructs';
 import { IAlertable } from './alertable';
 import { NoOpAlerter } from './alertables/no-op-alerter';
 import { Logger, LogLevel } from './logger';
+
 
 export interface AlarmerProps {
   /**

@@ -1,9 +1,10 @@
-import { Template } from '@aws-cdk/assertions';
-import * as lambda from '@aws-cdk/aws-lambda';
-import { Topic } from '@aws-cdk/aws-sns';
-import * as sfn from '@aws-cdk/aws-stepfunctions';
-import * as tasks from '@aws-cdk/aws-stepfunctions-tasks';
-import { Aspects, Duration, IAspect, IConstruct, Stack } from '@aws-cdk/core';
+import { Aspects, Duration, IAspect, Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
+import * as lambda from 'aws-cdk-lib/aws-lambda';
+import { Topic } from 'aws-cdk-lib/aws-sns';
+import * as sfn from 'aws-cdk-lib/aws-stepfunctions';
+import * as tasks from 'aws-cdk-lib/aws-stepfunctions-tasks';
+import { IConstruct } from 'constructs';
 import { StepFunctionsServiceAlarmer } from '../../src/alarmers/step-functions-service-alarmer';
 
 class BestPracticeAspect implements IAspect {

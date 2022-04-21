@@ -1,6 +1,6 @@
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnFunction } from '@aws-cdk/aws-lambda';
-import { IConstruct } from '@aws-cdk/core';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnFunction } from 'aws-cdk-lib/aws-lambda';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class LambdaServiceAlarmer extends Alarmer {

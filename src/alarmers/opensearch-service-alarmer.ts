@@ -1,6 +1,6 @@
-import { ComparisonOperator, Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnDomain } from '@aws-cdk/aws-opensearchservice';
-import { IConstruct } from '@aws-cdk/core';
+import { ComparisonOperator, Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnDomain } from 'aws-cdk-lib/aws-opensearchservice';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class OpensearchServiceAlarmer extends Alarmer {

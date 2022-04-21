@@ -1,7 +1,7 @@
-import { CfnRestApi } from '@aws-cdk/aws-apigateway';
-import { CfnApi } from '@aws-cdk/aws-apigatewayv2';
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { IConstruct } from '@aws-cdk/core';
+import { CfnRestApi } from 'aws-cdk-lib/aws-apigateway';
+import { CfnApi } from 'aws-cdk-lib/aws-apigatewayv2';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { IConstruct } from 'constructs';
 import { Alarmer, AlarmerProps } from '../alarmer';
 
 export class ApiGatewayServiceAlarmer extends Alarmer {

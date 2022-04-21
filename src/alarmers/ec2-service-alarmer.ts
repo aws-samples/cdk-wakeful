@@ -1,6 +1,7 @@
-import { ComparisonOperator, Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnInstance } from '@aws-cdk/aws-ec2';
-import { IConstruct, Stack } from '@aws-cdk/core';
+import { Stack } from 'aws-cdk-lib';
+import { ComparisonOperator, Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnInstance } from 'aws-cdk-lib/aws-ec2';
+import { IConstruct } from 'constructs';
 import { Alarmer, AlarmerProps } from '../alarmer';
 
 

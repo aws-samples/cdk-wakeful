@@ -1,7 +1,7 @@
-import { Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnLoadBalancer } from '@aws-cdk/aws-elasticloadbalancing';
-import { CfnLoadBalancer as CfnLoadBalancerV2 } from '@aws-cdk/aws-elasticloadbalancingv2';
-import { IConstruct } from '@aws-cdk/core';
+import { Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnLoadBalancer } from 'aws-cdk-lib/aws-elasticloadbalancing';
+import { CfnLoadBalancer as CfnLoadBalancerV2 } from 'aws-cdk-lib/aws-elasticloadbalancingv2';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class LoadBalancingServiceAlarmer extends Alarmer {

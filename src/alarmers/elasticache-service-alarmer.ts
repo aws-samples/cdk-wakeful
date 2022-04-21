@@ -1,6 +1,6 @@
-import { MathExpression, Metric, TreatMissingData } from '@aws-cdk/aws-cloudwatch';
-import { CfnCacheCluster } from '@aws-cdk/aws-elasticache';
-import { IConstruct } from '@aws-cdk/core';
+import { MathExpression, Metric, TreatMissingData } from 'aws-cdk-lib/aws-cloudwatch';
+import { CfnCacheCluster } from 'aws-cdk-lib/aws-elasticache';
+import { IConstruct } from 'constructs';
 import { Alarmer } from '../alarmer';
 
 export class ElasticacheServiceAlarmer extends Alarmer {

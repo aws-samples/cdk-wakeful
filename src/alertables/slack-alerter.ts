@@ -1,7 +1,7 @@
-import { SlackChannelConfiguration } from '@aws-cdk/aws-chatbot';
-import { Key } from '@aws-cdk/aws-kms';
-import { Topic } from '@aws-cdk/aws-sns';
-import { Stack } from '@aws-cdk/core';
+import { Stack } from 'aws-cdk-lib';
+import { SlackChannelConfiguration } from 'aws-cdk-lib/aws-chatbot';
+import { Key } from 'aws-cdk-lib/aws-kms';
+import { Topic } from 'aws-cdk-lib/aws-sns';
 import { SnsTopicAlerter, SnsTopicAlerterProps } from './sns-topic-alerter';
 
 export class SlackAlerter extends SnsTopicAlerter {

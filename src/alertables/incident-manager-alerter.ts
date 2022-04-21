@@ -1,5 +1,6 @@
-import { Alarm, AlarmActionConfig, CfnAlarm, IAlarm, IAlarmAction } from '@aws-cdk/aws-cloudwatch';
-import { Construct, Stack } from '@aws-cdk/core';
+import { Stack } from 'aws-cdk-lib';
+import { Alarm, AlarmActionConfig, CfnAlarm, IAlarm, IAlarmAction } from 'aws-cdk-lib/aws-cloudwatch';
+import { Construct } from 'constructs';
 import { IAlertable } from '../alertable';
 
 export interface IncidentManagerAlerterProps {
