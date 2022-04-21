@@ -51,3 +51,4 @@ junit.xml
 tsconfig.json
 !/API.md
 .idea
+.DS_Store
