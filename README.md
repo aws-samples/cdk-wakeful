@@ -105,6 +105,7 @@ For Python run the following command:
 
 ```console
 pip install python/cdk_wakeful-0.0.0-py3-none-any.whl
+```
 
 ## Security
 
