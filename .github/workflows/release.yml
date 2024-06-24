@@ -25,9 +25,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
       - name: Install dependencies
-        run: |-
-          node --version
-          yarn install --check-files --frozen-lockfile
+        run: yarn install --check-files --frozen-lockfile
       - name: release
         run: npx projen release
       - name: Check for new commits
@@ -40,7 +38,7 @@ jobs:
           name: build-artifact
           path: dist
     container:
-      image: jsii/superchain:1-buster-slim-node14
+      image: jsii/superchain:1-buster-slim-node20
   release_github:
     name: Publish to GitHub Releases
     needs: release
