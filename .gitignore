@@ -4,6 +4,7 @@
 !/.projen/deps.json
 !/.projen/files.json
 !/.github/workflows/pull-request-lint.yml
+!/.github/workflows/auto-approve.yml
 !/package.json
 !/LICENSE
 !/.npmignore
@@ -30,6 +31,7 @@ jspm_packages/
 *.tgz
 .yarn-integrity
 .cache
+.DS_Store
 /test-reports/
 junit.xml
 /coverage/
@@ -51,4 +53,3 @@ tsconfig.json
 !/API.md
 .idea
 !/.projenrc.js
-.DS_Store
