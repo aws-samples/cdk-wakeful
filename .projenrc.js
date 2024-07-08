@@ -14,7 +14,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   autoApproveUpgrades: true,
   autoApproveOptions: {
-    allowedUsernames: ['dependabot[bot]'],
+    secret: 'GITHUB_TOKEN',
+    allowedUsernames: ['dependabot[bot]', 'davidhessler'],
   },
   autoMerge: true,
   autoMergeOptions: {
