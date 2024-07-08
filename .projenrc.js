@@ -19,7 +19,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   },
   autoMerge: true,
   autoMergeOptions: {
-    allowedUsernames: 'dependabot[bot]',
+    allowedUsernames: ['dependabot[bot]', 'davidhessler'],
   },
   github: true,
   release: false,
